@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/04 10:17:45 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/04 11:46:26 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@
 			#################
 
 NAME	=	libft.a
-
 SRCS	=	ft_abs.c				\
 			ft_atoi.c				\
 			ft_bzero.c				\
@@ -121,15 +120,10 @@ SRCS	=	ft_abs.c				\
 			ft_void.c
 
 OBJS	=	$(SRCS:.c=.o)
-
 CC		=	gcc
-
 CFLAGS	+=	-Wall -Wextra -Werror
-
 AR		=	ar rc
-
 RM		=	rm -f
-
 RAN		=	ranlib
 
 
@@ -174,7 +168,7 @@ all		:	$(NAME)
 
 %.o		:	%.c
 	@$(CC) $(CFLAGS) -c -o $@ $^
-#	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $^ $(GRN)$(CHECK)$(RCLRS)"
+	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $^ $(GRN)$(CHECK)$(RCLRS)"
 
 start	:
 	@echo "\t$(BOLD)$(UNDER)Compiling$(RALL) SRCS to OBJS $(LBLU)$(HGLSS)$(RALL)\n\t\tPlease, wait..."
@@ -184,6 +178,7 @@ $(NAME)	:	start $(OBJS)
 	@$(AR) $@ $(OBJS)
 	@$(RAN) $@
 	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $@ $(GRN)$(CHECK)$(RCLRS)"
+	@make clean
 
 clean	:
 	@$(RM) $(OBJS)
