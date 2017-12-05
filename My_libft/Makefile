@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/05 14:09:54 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/05 14:28:39 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -206,45 +206,5 @@ rainbow	:
 	@echo "$(RED)# $(ORG)# $(YLW)# $(GRN)# $(CYN)# $(LBLU)# $(PRL)#                                   # $(LBLU)# $(CYN)# $(GRN)# $(YLW)# $(ORG)# $(RED)#$(CLRS)"
 	@echo "$(RED)# $(ORG)# $(YLW)# $(GRN)# $(CYN)# $(LBLU)# $(PRL)#                                   # $(LBLU)# $(CYN)# $(GRN)# $(YLW)# $(ORG)# $(RED)#$(CLRS)"
 	@echo "$(RED)# $(ORG)# $(YLW)# $(GRN)# $(CYN)# $(LBLU)# $(PRL)#                                   # $(LBLU)# $(CYN)# $(GRN)# $(YLW)# $(ORG)# $(RED)#$(CLRS)"
-
-test :
-	@echo "$(RED)test red$(RALL)"
-	@echo "$(ORG)test orange$(RALL)"
-	@echo "$(GRN)test green$(RALL)"
-	@echo "$(BLU)test blue$(RALL)"
-	@echo "$(LBLU)test light blue$(RALL)\n"
-	@echo "$(YLW)test yellow$(RALL)"
-	@echo "$(CYN)test cyan$(RALL)"
-	@echo "$(MGT)test magenta$(RALL)"
-	@echo "$(PRL)test purple$(RALL)\n"
-	@echo "$(SLM)test salmon$(RALL)"
-
-
-skull	:
-	@echo "                    :PB@Bk:"
-	@echo "                ,jB@@B@B@B@BBL."
-	@echo "             7G@B@B@BMMMMMB@B@B@Nr"
-	@echo "         :kB@B@@@MMOMOMOMOMMMM@B@B@B1,"
-	@echo "     :5@B@B@B@BBMMOMOMOMOMOMOMM@@@B@B@BBu."
-	@echo "  70@@@B@B@B@BXBBOMOMOMOMOMOMMBMPB@B@B@B@B@Nr"
-	@echo "G@@@BJ iB@B@@  OBMOMOMOMOMOMOM@2  B@B@B. EB@B@S"
-	@echo "@@BM@GJBU.  iSuB@OMOMOMOMOMOMM@OU1:  .kBLM@M@B@"
-	@echo "B@MMB@B       7@BBMMOMOMOMOMOBB@:       B@BMM@B"
-	@echo "@@@B@B         7@@@MMOMOMOMM@B@:         @@B@B@"
-	@echo "@@OLB.          BNB@MMOMOMM@BEB          rBjM@B"
-	@echo "@@  @           M  OBOMOMM@q  M          .@  @@"
-	@echo "@@OvB           B:u@MMOMOMMBJiB          .BvM@B"
-	@echo "@B@B@J         0@B@MMOMOMOMB@B@u         q@@@B@"
-	@echo "B@MBB@v       G@@BMMMMMMMMMMMBB@5       F@BMM@B"
-	@echo "@BBM@BPNi   LMEB@OMMMM@B@MMOMM@BZM7   rEqB@MBB@"
-	@echo "B@@@BM  B@B@B  qBMOMB@B@B@BMOMBL  B@B@B  @B@B@M"
-	@echo " J@@@@PB@B@B@B7G@OMBB.   ,@MMM@qLB@B@@@BqB@BBv"
-	@echo "    iGB@,i0@M@B@MMO@E  :  M@OMM@@@B@Pii@@N:"
-	@echo "       .   B@M@B@MMM@B@B@B@MMM@@@M@B"
-	@echo "           @B@B.i@MBB@B@B@@BM@::B@B@"
-	@echo "           B@@@ .B@B.:@B@ :B@B  @B@O"
-	@echo "             :0 r@B@  B@@ .@B@: P:"
-	@echo "                 vMB :@B@ :BO7"
-	@echo "                     ,B@B"
 
 .PHONY	:	all, clean, fclean, re, start, rainbow
