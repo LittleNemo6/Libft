@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/11/30 15:54:54 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/06 15:09:07 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,6 +81,7 @@ SRCS	=	ft_abs.c				\
 			ft_strncat.c			\
 			ft_strncmp.c			\
 			ft_strncpy.c			\
+			ft_strndup.c			\
 			ft_strnequ.c			\
 			ft_strnew.c				\
 			ft_strnlen.c			\

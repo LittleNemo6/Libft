@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/04 10:40:52 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/06 15:09:59 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ char			*ft_strmap(char const *s, char (*f)(char));
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char			*ft_strncat(char *s1, const char *s2, size_t n);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
+char			*ft_strndup(const char *s1, size_t n);
 char			*ft_strnew(size_t size);
 char			*ft_strnstr(const char *haystack, const char *needle, size_t n);
 char			*ft_strpbrk(const char *s1, const char *s2);
