@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/05 14:28:39 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/07 19:02:36 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -188,6 +188,9 @@ fclean	:	clean
 	@echo "\t$(UNDER)$(BOLD)Removed$(RUNDER)$(RALL) : $(NAME) $(GRN)$(CHECK)$(RCLRS)"
 
 re		:	fclean all
+
+norm	:
+	@norminette `find . \( -name "*.c" -o -name "*.h" \)` | grep -B 1 'Warning\|Error'
 
 rainbow	:
 	@echo "                        $(RED)# # # # # # # $(CLRS)"
