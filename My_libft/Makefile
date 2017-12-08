@@ -6,15 +6,18 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/07 19:02:36 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/08 20:51:54 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-			#################
-			##  VARIABLES  ##
-			#################
-
+	#################
+	##   TARGET    ##
+	#################
 NAME	=	libft.a
+
+	#################
+	##   SOURCES   ##
+	#################
 SRCS	=	ft_abs.c				\
 			ft_atoi.c				\
 			ft_bzero.c				\
@@ -119,17 +122,42 @@ SRCS	=	ft_abs.c				\
 			ft_toupper.c			\
 			ft_void.c
 
+	#################
+	##   OBJECTS   ##
+	#################
 OBJS	=	$(SRCS:.c=.o)
+	
+	#################
+	##  COMPILING  ##
+	#################
+
+# = COMPILATOR = #
 CC		=	gcc
 CFLAGS	+=	-Wall -Wextra -Werror
+# ============== #
+	
+# == INCLUDES == #
+INC		=	-Iincludes
+# ============== #
+
+# ==== LIB ===== #
+LIB		=	-Llibft -lft
 AR		=	ar rc
-RM		=	rm -f
 RAN		=	ranlib
+# ============== #
 
+# === SLAVES === #
+MAKESLV	=	make -C
+# ============== #
 
-			#################
-			##    MACROS   ##
-			#################
+	#################
+	##  DELETION   ##
+	#################
+RM		=	rm -f
+
+	#################
+	##   DISPLAY   ##
+	#################
 
 # === COLORS === #
 RED		=	\033[31m
@@ -149,16 +177,23 @@ SLM		=	\033[38;5;203m
 # === FORMAT === #
 BOLD	=	\033[1m
 UNDER	=	\033[4m
+DIM		=	\033[2m
 RALL	=	\033[0m
 # ============== #
 
 # === CHARAC === #
-CHECK	=	✔
-CROSS	=	✘
-HGLSS	=	⧗
-RAROW	=	➜
+CHECK	=	\\xE2\\x9C\\x94
+CROSS	=	\\xE2\\x9C\\x98
+HGLSS	=	\\xE2\\xA7\\x97
+RAROW	=	\\xE2\\x9E\\x9C
 # ============== #
 
+# === MACROS === #
+OK		=	$(GRN)$(CHECK)$(RCLRS)
+KO		=	$(RED)$(CROSS)$(RCLRS)
+WAIT	=	$(LBLU)$(HGLSS)$(RCLRS)
+ARROW	=	$(LBLU)$(RAROW)$(RCLRS)
+# ============== #
 
 			#################
 			##    RULES    ##
@@ -166,31 +201,33 @@ RAROW	=	➜
 
 all		:	$(NAME)
 
+proper	:	all clean
+
 %.o		:	%.c
 	@$(CC) $(CFLAGS) -o $@ -c $<
 #	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $^ $(GRN)$(CHECK)$(RCLRS)"
 
 start	:
-	@echo "\t$(BOLD)$(UNDER)Compiling$(RALL) SRCS to OBJS $(LBLU)$(HGLSS)$(RALL)\n\t\tPlease, wait..."
+	@echo "\t$(BOLD)$(UNDER)Compiling$(RALL) SRCS to OBJS $(WAIT)\n\t\tPlease, wait..."
 
 $(NAME)	:	start $(OBJS)
-	@echo "\t$(BOLD)Compilation done$(RALL) $(GRN)$(CHECK)$(RCLRS)"
+	@echo "\t$(BOLD)Compilation done$(RALL) $(OK)"
 	@$(AR) $@ $(OBJS)
 	@$(RAN) $@
-	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $@ $(GRN)$(CHECK)$(RCLRS)"
+	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $@ $(OK)"
 
 clean	:
 	@$(RM) $(OBJS)
-	@echo "\t$(UNDER)$(BOLD)Removed$(RUNDER)$(RALL) : OBJS $(GRN)$(CHECK)$(RCLRS)"
+	@echo "\t$(UNDER)$(BOLD)Removed$(RUNDER)$(RALL) : OBJS $(OK)"
 
 fclean	:	clean
 	@$(RM) $(NAME)
-	@echo "\t$(UNDER)$(BOLD)Removed$(RUNDER)$(RALL) : $(NAME) $(GRN)$(CHECK)$(RCLRS)"
+	@echo "\t$(UNDER)$(BOLD)Removed$(RUNDER)$(RALL) : $(NAME) $(OK)"
 
 re		:	fclean all
 
-norm	:
-	@norminette `find . \( -name "*.c" -o -name "*.h" \)` | grep -B 1 'Warning\|Error'
+test	:
+	@echo "$(DIM)test$(RALL)"
 
 rainbow	:
 	@echo "                        $(RED)# # # # # # # $(CLRS)"
@@ -210,4 +247,4 @@ rainbow	:
 	@echo "$(RED)# $(ORG)# $(YLW)# $(GRN)# $(CYN)# $(LBLU)# $(PRL)#                                   # $(LBLU)# $(CYN)# $(GRN)# $(YLW)# $(ORG)# $(RED)#$(CLRS)"
 	@echo "$(RED)# $(ORG)# $(YLW)# $(GRN)# $(CYN)# $(LBLU)# $(PRL)#                                   # $(LBLU)# $(CYN)# $(GRN)# $(YLW)# $(ORG)# $(RED)#$(CLRS)"
 
-.PHONY	:	all, clean, fclean, re, start, rainbow
+.PHONY	:	all clean fclean re start rainbow
