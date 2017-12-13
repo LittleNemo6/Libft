@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 16:45:34 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/06 14:16:16 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/13 11:18:45 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char			**ft_strsplit(char const *s, char c)
 	{
 		while (s[i] == c)
 			i++;
-		if (ft_isascii(s[i]) && s[i] != c && s[i] != '\0')
+		if (s[i] != c && s[i])
 		{
 			if (!(tab[j++] = ft_strsub(s, i, ft_strclen(s, i, c))))
 				return (NULL);

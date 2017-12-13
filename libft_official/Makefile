@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/06 15:09:07 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/13 11:33:39 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,7 @@ SRCS	=	ft_abs.c				\
 			ft_strcapitalize.c		\
 			ft_strcat.c				\
 			ft_strchr.c				\
+			ft_strclen.c			\
 			ft_strclr.c				\
 			ft_strcmp.c				\
 			ft_strcpy.c				\
@@ -95,8 +96,7 @@ SRCS	=	ft_abs.c				\
 			ft_strtrim.c			\
 			ft_strupcase.c			\
 			ft_tolower.c			\
-			ft_toupper.c			\
-			ft_untilc.c
+			ft_toupper.c
 
 OBJS	=	$(SRCS:.c=.o)
 
