@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 11:03:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 17:25:44 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 14:58:19 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int				ft_isxdigit(int c)
 {
-	if (ft_isdigit(c) || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f'))
-		return (1);
-	return (0);
+	return (ft_isdigit(c) || (c >= 'A' && c <= 'F') || (c >= 'a' && c <= 'f'));
 }

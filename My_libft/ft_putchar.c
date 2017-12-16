@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:33:42 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:32:14 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 15:49:11 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void			ft_putchar(char c)
+int				ft_putchar(char c)
 {
-	write(1, &c, 1);
+	return (write(1, &c, 1));
 }

@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_isupper.c                                   :+:      :+:    :+:   */
+/*   ft_putchar_endl.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/20 12:02:33 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/16 15:25:33 by lbrangie         ###   ########.fr       */
+/*   Created: 2017/12/16 15:35:37 by lbrangie          #+#    #+#             */
+/*   Updated: 2017/12/16 15:49:42 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_str_isupper(char *str)
+int				ft_putchar_endl(char c)
 {
-	if (!str)
-		return (0);
-	while (*str)
-		if (!ft_isupper(*str++))
-			return (0);
-	return (1);
+	if ((write(1, &c, 1) == -1) || (write(1, "\n", 1) == -1))
+		return (-1);
+	return (2);
 }

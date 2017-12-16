@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/16 12:42:53 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 16:41:12 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,14 @@ int				ft_nextprime(int n);
 int				ft_pgcd(int a, int b);
 int				ft_power(int nb, int power);
 int				ft_ppcm(int a, int b);
+int				ft_putchar(char c);
+int				ft_putchar_endl(char c);
+int				ft_putchar_endl_fd(char c, int fd);
+int				ft_putchar_fd(char c, int fd);
+int				ft_putstr(const char *s);
+int				ft_putstr_endl(const char *s);
+int				ft_putstr_endl_fd(const char *s, int fd);
+int				ft_putstr_fd(const char *s, int fd);
 int				ft_str_isalnum(char *str);
 int				ft_str_isalpha(char *str);
 int				ft_str_isascii(char *str);
@@ -100,7 +108,7 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 size_t			ft_cntwrd(const char *s, char c);
 size_t			ft_numlen(int n);
-size_t			ft_strclen(char const *s, int i, char c);
+size_t			ft_strclen(char const *s, char c);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *s);
 size_t			ft_strnlen(const char *s, size_t maxlen);
@@ -112,14 +120,10 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_memdel(void **ap);
-void			ft_putchar(char c);
-void			ft_putchar_fd(char c, int fd);
 void			ft_putendl(char const *s);
 void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr(int n);
 void			ft_putnbr_fd(int n, int fd);
-void			ft_putstr(const char *s);
-void			ft_putstr_fd(const char *s, int fd);
 void			ft_puttab(char **tab);
 void			ft_puttab_fd(char **tab, int fd);
 void			ft_strclr(char *s);

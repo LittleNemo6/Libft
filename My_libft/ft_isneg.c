@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 15:59:18 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 17:21:47 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 14:55:05 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int				ft_isneg(int n)
 {
-	if (n < 0)
-		return (1);
-	return (0);
+	return (n < 0);
 }

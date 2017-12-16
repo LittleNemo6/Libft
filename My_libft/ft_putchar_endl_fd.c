@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_endl_fd.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/13 13:38:05 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:32:32 by lbrangie         ###   ########.fr       */
+/*   Created: 2017/12/16 15:41:26 by lbrangie          #+#    #+#             */
+/*   Updated: 2017/12/16 16:39:25 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void			ft_putendl(char const *s)
+int				ft_putchar_endl_fd(char c, int fd)
 {
-	if (!s)
-		return ;
-	ft_putstr(s);
-	ft_putchar('\n');
+	if ((write(fd, &c, 1) == -1) || (write(fd, "\n", 1) == -1))
+		return (-1);
+	return (2);
 }

@@ -6,15 +6,15 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:35:42 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:33:03 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 15:53:01 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void			ft_putstr(char const *s)
+int				ft_putstr(char const *s)
 {
 	if (!s)
-		return ;
-	write(1, s, ft_strlen(s));
+		return (-1);
+	return (write(1, s, ft_strlen(s)));
 }

@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 10:37:29 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 17:20:43 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 14:54:19 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int				ft_isgraph(int c)
 {
-	if (ft_isprint(c) && c != ' ')
-		return (1);
-	return (0);
+	return (ft_isprint(c) && c != ' ');
 }

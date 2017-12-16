@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 11:50:29 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:33:29 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 15:18:55 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 int				ft_str_is_alpha(char *str)
 {
-	unsigned int	i;
-
-	i = 0;
 	if (!str)
 		return (0);
-	while (str[i])
-		if (!ft_isalpha(str[i++]))
+	while (*str)
+		if (!ft_isalpha(*str++))
 			return (0);
 	return (1);
 }

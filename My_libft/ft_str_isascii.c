@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 13:30:28 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 13:32:07 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 15:21:38 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 int				ft_str_isascii(char *str)
 {
-	unsigned int	i;
-
-	i = 0;
 	if (!str)
 		return (0);
-	while (str[i])
-		if (!ft_isascii(str[i++]))
+	while (*str)
+		if (!ft_isascii(*str++))
 			return (0);
 	return (1);
 }

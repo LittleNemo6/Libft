@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/16 11:42:42 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/16 15:18:46 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -116,7 +116,7 @@ RAN		=	ranlib
 all		:	$(NAME)
 
 %.o		:	%.c
-	$(CC) $(CFLAGS) -c -o $@ $^ $(INC)
+	$(CC) $(CFLAGS) -o $@ -c $<
 
 $(NAME)	:	$(OBJS)
 	$(AR) $@ $^

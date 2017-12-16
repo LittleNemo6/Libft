@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 13:46:14 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 13:48:42 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 15:25:56 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 int				ft_str_isxdigit(char *str)
 {
-	unsigned int	i;
-
-	i = 0;
 	if (!str)
 		return (0);
-	while (str[i])
-		if (!ft_isxdigit(str[i++]))
+	while (*str)
+		if (!ft_isxdigit(*str++))
 			return (0);
 	return (1);
 }

@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:06:00 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 17:21:18 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 14:54:35 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int				ft_islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
-		return (1);
-	return (0);
+	return (c >= 'a' && c <= 'z');
 }

@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 16:45:34 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/13 11:18:45 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 13:07:58 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,9 @@ char			**ft_strsplit(char const *s, char c)
 			i++;
 		if (s[i] != c && s[i])
 		{
-			if (!(tab[j++] = ft_strsub(s, i, ft_strclen(s, i, c))))
+			if (!(tab[j++] = ft_strsub(s, i, ft_strclen(&s[i], c))))
 				return (NULL);
-			i = i + ft_strclen(s, i, c);
+			i = i + ft_strclen(&s[i], c);
 		}
 	}
 	tab[j] = NULL;

@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:11:59 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 17:16:49 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 14:43:56 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int				ft_isalpha(int c)
 {
-	if (ft_isupper(c) || ft_islower(c))
-		return (1);
-	return (0);
+	return (ft_isupper(c) || ft_islower(c));
 }

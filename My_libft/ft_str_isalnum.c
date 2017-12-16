@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/28 13:25:10 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 13:30:16 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/12/16 15:18:04 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 int				ft_str_isalnum(char *str)
 {
-	unsigned int	i;
-
-	i = 0;
 	if (!str)
 		return (0);
-	while (str[i])
-		if (!ft_isalnum(str[i++]))
+	while (*str)
+		if (!ft_isalnum(*str++))
 			return (0);
 	return (1);
 }
