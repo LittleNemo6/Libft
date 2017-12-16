@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 15:57:05 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/30 15:55:34 by lbrangie         ###   ########.fr       */
+/*   Updated: 2017/11/30 15:57:38 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int				ft_abs(int n)
 {
 	if (n < 0)
-		return (-(n));
+		return (-n);
 	return (n);
 }

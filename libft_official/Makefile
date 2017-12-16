@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/13 11:33:39 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/16 11:42:42 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -104,6 +104,8 @@ CC		=	gcc
 
 CFLAGS	+=	-Wall -Wextra -Werror
 
+INC		=	-I includes
+
 AR		=	ar rc
 
 RM		=	rm -f
@@ -114,7 +116,7 @@ RAN		=	ranlib
 all		:	$(NAME)
 
 %.o		:	%.c
-	$(CC) $(CFLAGS) -c -o $@ $^
+	$(CC) $(CFLAGS) -c -o $@ $^ $(INC)
 
 $(NAME)	:	$(OBJS)
 	$(AR) $@ $^
