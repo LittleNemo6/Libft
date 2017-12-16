@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/08 20:51:54 by lbrangie         ###   ########.fr        #
+#    Updated: 2017/12/16 12:46:29 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -69,7 +69,6 @@ SRCS	=	ft_abs.c				\
 			ft_putstr_fd.c			\
 			ft_puttab.c				\
 			ft_puttab_fd.c			\
-			ft_segfault.c			\
 			ft_sqrt.c				\
 			ft_str_isalnum.c		\
 			ft_str_isalpha.c		\
@@ -119,8 +118,7 @@ SRCS	=	ft_abs.c				\
 			ft_strsub.c				\
 			ft_strtrim.c			\
 			ft_tolower.c			\
-			ft_toupper.c			\
-			ft_void.c
+			ft_toupper.c
 
 	#################
 	##   OBJECTS   ##
