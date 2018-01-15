@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/16 16:41:12 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/01/15 15:58:59 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,9 +109,11 @@ int				ft_toupper(int c);
 size_t			ft_cntwrd(const char *s, char c);
 size_t			ft_numlen(int n);
 size_t			ft_strclen(char const *s, char c);
+size_t			ft_strcspn(const char *s, const char *charset);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *s);
 size_t			ft_strnlen(const char *s, size_t maxlen);
+size_t			ft_strspn(const char *s, const char *charset);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_bzero(void *s, size_t n);

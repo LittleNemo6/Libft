@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2017/12/16 16:58:29 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/01/15 15:36:20 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,6 +94,7 @@ SRCS		=		ft_abs.c				\
 					ft_strclr.c				\
 					ft_strcmp.c				\
 					ft_strcpy.c				\
+					ft_strcspn.c			\
 					ft_strdel.c				\
 					ft_strdup.c				\
 					ft_strequ.c				\
@@ -116,6 +117,7 @@ SRCS		=		ft_abs.c				\
 					ft_strrchr.c			\
 					ft_strrev.c				\
 					ft_strsplit.c			\
+					ft_strspn.c				\
 					ft_strstr.c				\
 					ft_strsub.c				\
 					ft_strtrim.c			\
@@ -211,7 +213,7 @@ proper		:
 
 %.o			:		%.c
 	@$(CC) $(CFLAGS) -o $@ -c $< $(INC)
-#	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $^ $(GRN)$(CHECK)$(RCLRS)"
+	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $^ $(GRN)$(CHECK)$(RCLRS)"
 
 start		:
 	@echo "\t$(BOLD)$(UNDER)Compiling$(RALL) SRCS to OBJS $(WAIT)\n\t\tPlease, wait..."
