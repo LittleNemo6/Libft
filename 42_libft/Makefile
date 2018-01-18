@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/01/15 15:36:20 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/01/18 13:05:58 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,7 +122,8 @@ SRCS		=		ft_abs.c				\
 					ft_strsub.c				\
 					ft_strtrim.c			\
 					ft_tolower.c			\
-					ft_toupper.c
+					ft_toupper.c			\
+					get_next_line.c
 
 	#################
 	##   OBJECTS   ##
@@ -139,9 +140,10 @@ CFLAGS		+=		-Wall -Wextra -Werror
 # ============== #
 	
 # == INCLUDES == #
-INC_FILE	=		libft.h
-INC_DIR		=		includes
-INC			=		-I./includes
+INC_DIR		=		includes/
+INC_FILE	=		libft.h					\
+					get_next_line.h
+INC			=		-I$(INC_DIR)
 # ============== #
 
 # ==== LIB ===== #
