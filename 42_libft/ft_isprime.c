@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/30 12:09:41 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/30 15:58:43 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:00:15 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,7 @@ int				ft_isprime(int n)
 		return (0);
 	i = 2;
 	while (i < n)
-	{
-		if (!(n % i))
+		if (!(n % i++))
 			return (0);
-		i++;
-	}
 	return (1);
 }

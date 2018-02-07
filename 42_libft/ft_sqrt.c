@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/30 11:07:08 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/30 15:59:08 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:47:38 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int				ft_sqrt(int nb)
 		if ((i * i) > nb)
 		{
 			ft_putnbr(nb);
-			ft_putendl(" DOESN'T HAVE A PERFECT SQRT !");
+			ft_putstr_endl(" DOESN'T HAVE A PERFECT SQRT !");
 			return (0);
 		}
 		i++;

@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/01/15 15:58:59 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:42:31 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ char			*ft_strcat(char *s1, const char *s2);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strdup(const char *s1);
-char			*ft_strjoin(char const *s1, char const *s2);
-char			*ft_strmap(char const *s, char (*f)(char));
-char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char			*ft_strjoin(const char *s1, const char *s2);
+char			*ft_strmap(const char*s, char (*f)(char));
+char			*ft_strmapi(const char*s, char (*f)(unsigned int, char));
 char			*ft_strncat(char *s1, const char *s2, size_t n);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
 char			*ft_strndup(const char *s1, size_t n);
@@ -51,9 +51,9 @@ char			*ft_strpbrk(const char *s1, const char *s2);
 char			*ft_strrchr(const char *s, int c);
 char			*ft_strrev(char *str);
 char			*ft_strstr(const char *haystack, const char *needle);
-char			*ft_strsub(char const *s, unsigned int start, size_t len);
-char			*ft_strtrim(char const *s);
-char			**ft_strsplit(char const *s, char c);
+char			*ft_strsub(const char *s, unsigned int start, size_t len);
+char			*ft_strtrim(const char *s);
+char			**ft_strsplit(const char *s, char c);
 int				ft_abs(int n);
 int				ft_atoi(const char *str);
 int				ft_factorial(int nb);
@@ -66,7 +66,9 @@ int				ft_iscntrl(int c);
 int				ft_isdigit(int c);
 int				ft_isgraph(int c);
 int				ft_islower(int c);
+int				ft_ismult(int n, int table);
 int				ft_isneg(int n);
+int				ft_isodd(int n);
 int				ft_isprime(int n);
 int				ft_isprint(int c);
 int				ft_ispunct(int c);
@@ -100,30 +102,28 @@ int				ft_str_isspace(char *str);
 int				ft_str_isupper(char *str);
 int				ft_str_isxdigit(char *str);
 int				ft_strcmp(const char *s1, const char *s2);
-int				ft_strequ(char const *s1, char const *s2);
+int				ft_strequ(const char*s1, const char*s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
-int				ft_strnequ(char const *s1, char const *s2, size_t n);
+int				ft_strnequ(const char *s1, const char *s2, size_t n);
 int				ft_sqrt(int nb);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 size_t			ft_cntwrd(const char *s, char c);
 size_t			ft_numlen(int n);
-size_t			ft_strclen(char const *s, char c);
+size_t			ft_strclen(const char*s, char c);
 size_t			ft_strcspn(const char *s, const char *charset);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlen(const char *s);
 size_t			ft_strnlen(const char *s, size_t maxlen);
 size_t			ft_strspn(const char *s, const char *charset);
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-t_list			*ft_lstnew(void const *content, size_t content_size);
+t_list			*ft_lstnew(const void *content, size_t content_size);
 void			ft_bzero(void *s, size_t n);
 void			ft_lstadd(t_list **alst, t_list *new);
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_memdel(void **ap);
-void			ft_putendl(char const *s);
-void			ft_putendl_fd(char const *s, int fd);
 void			ft_putnbr(int n);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_puttab(char **tab);

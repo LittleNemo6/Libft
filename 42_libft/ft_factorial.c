@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/30 10:32:55 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/30 10:49:16 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 14:07:53 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,7 @@
 
 int				ft_factorial(int nb)
 {
-	if (nb > 12)
-	{
-		ft_putnbr(nb);
-		ft_putendl("! IS TOO BIG FOR AN INT!");
-		return (0);
-	}
-	if (nb < 0)
+	if (nb > 12 || nb < 0)
 		return (0);
 	if (nb == 1)
 		return (nb);

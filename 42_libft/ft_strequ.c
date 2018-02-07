@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 17:49:11 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:35:36 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:49:08 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_strequ(char const *s1, char const *s2)
+int				ft_strequ(const char *s1, const char *s2)
 {
 	int				i;
 

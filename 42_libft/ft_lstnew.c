@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 16:01:17 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:29:08 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:32:15 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list			*ft_lstnew(void const *content, size_t content_size)
+t_list			*ft_lstnew(const void *content, size_t content_size)
 {
 	t_list			*fresh;
 

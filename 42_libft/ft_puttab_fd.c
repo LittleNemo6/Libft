@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/15 16:03:52 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:33:23 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:47:13 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void			ft_puttab_fd(char **tab, int fd)
 	i = 0;
 	while (tab[i])
 	{
-		ft_putendl_fd(tab[i], fd);
+		ft_putstr_endl_fd(tab[i], fd);
 		i++;
 	}
 }

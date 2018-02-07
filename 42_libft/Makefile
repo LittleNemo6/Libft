@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/01/18 13:05:58 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/02/07 13:50:22 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,9 @@ SRCS		=		ft_abs.c				\
 					ft_isdigit.c			\
 					ft_isgraph.c			\
 					ft_islower.c			\
+					ft_ismult.c				\
 					ft_isneg.c				\
+					ft_isodd.c				\
 					ft_isprime.c			\
 					ft_isprint.c			\
 					ft_ispunct.c			\
@@ -194,6 +196,7 @@ CROSS		=		\\xE2\\x9C\\x98
 HGLSS		=		\\xE2\\xA7\\x97
 RAROW		=		\\xE2\\x9E\\x9C
 COPYR		=		\\xC2\\xA9
+COFFE		=		\t  S\n\tC[_]
 # ============== #
 
 # === MACROS === #
@@ -222,7 +225,7 @@ start		:
 
 $(NAME)		:		start $(OBJS)
 	@echo "\t$(BOLD)Compilation done$(RALL) $(OK)"
-	@$(AR) $@ $(OBJS)
+	@$(AR) $@ $(OBJS) 
 	@$(RAN) $@
 	@echo "\t$(UNDER)$(BOLD)Compiled$(RALL) : $@ $(OK)"
 
@@ -238,8 +241,11 @@ re			:
 	@$(MAKESLV) . fclean
 	@$(MAKESLV) . all
 
-test		:
-	@echo "$(COPYR)"
+norme 		:		$(SRCS) $(INC_DIR)
+	@norminette $^ | grep -B 1 "Warning\|Error" || true
+
+coffee		:
+	@echo "Here's a cup of coffee\n$(COFFE)"
 
 rainbow		:
 	@echo "                        $(RED)# # # # # # # $(RCLRS)"

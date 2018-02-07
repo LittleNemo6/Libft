@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/30 12:38:59 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/30 13:07:12 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:00:11 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 int				ft_nextprime(int n)
 {
-	int				mod;
-
-	mod = 0;
-	while (ft_isprime(n) == 0)
-		++n;
+	if (ft_isprime(n))
+		n++;
+	while (!ft_isprime(n))
+		n++;
 	return (n);
 }

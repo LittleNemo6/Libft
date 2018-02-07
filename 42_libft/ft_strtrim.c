@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 10:41:16 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/28 10:33:37 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/07 11:40:24 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char			*ft_strtrim(char const *s)
+char			*ft_strtrim(const char *s)
 {
 	unsigned int	i;
 	int				j;
