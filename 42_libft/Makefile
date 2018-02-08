@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/02/07 13:50:22 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/02/08 16:00:27 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -196,7 +196,7 @@ CROSS		=		\\xE2\\x9C\\x98
 HGLSS		=		\\xE2\\xA7\\x97
 RAROW		=		\\xE2\\x9E\\x9C
 COPYR		=		\\xC2\\xA9
-COFFE		=		\t  S\n\tC[_]
+COFFE		=		\t  S\n\t$(UNDER)C[_]$(RALL)
 # ============== #
 
 # === MACROS === #
