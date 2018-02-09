@@ -6,11 +6,22 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:27:15 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/07 18:12:56 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/09 15:02:12 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** DESCRIPTION
+**	- The ft_tolower function convert an upper-case letter to the corresponding
+**	lower-case letter.
+**
+** RETURN VALUES
+**	- ft_tolower returns the lower-case letter if the argument is an upper-case
+**	letter. If the argument isn't an upper-case letter, it is returned
+**	unchanged.
+*/
 
 int				ft_tolower(int c)
 {
