@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:14:07 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/09 14:52:54 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/09 16:26:54 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 ** DESCRIPTION
-**	- The ft_isdigit function tests if the integer c is a decimal-digit 
+**	- The ft_isdigit function tests if the integer c is a decimal-digit
 **	character.
 **	This includes the following characters (preceded by their decimal values) :
 **		 48 '0'		 49 '1'		 50 '2'		 51 '3'		 52 '4'

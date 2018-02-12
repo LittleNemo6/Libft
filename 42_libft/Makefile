@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/02/09 16:16:34 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/02/09 16:47:04 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -294,4 +294,4 @@ rainbow			:
 	@echo "$(RED)# $(ORG)# $(YLW)# $(GRN)# $(CYN)# $(LBLU)# $(PRL)#                                   # $(LBLU)# $(CYN)# $(GRN)# $(YLW)# $(ORG)# $(RED)#$(EOF)"
 	@echo "\t\t\t\t\t\t$(COPYR) lbrangie <lbrangie@student.42.fr>"
 
-.PHONY		:		all clean fclean re start rainbow
+.PHONY		:		all clean fclean re start norme coffee rainbow

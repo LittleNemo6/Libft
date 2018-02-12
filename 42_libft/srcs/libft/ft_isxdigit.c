@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 11:03:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/09 15:01:21 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/09 16:27:11 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 ** DESCRIPTION
-**	- The ft_isxdigit function tests if the integer c is a hexadecimal-digit 
+**	- The ft_isxdigit function tests if the integer c is a hexadecimal-digit
 **	character.
 **	This includes the following characters (preceded by their decimal values) :
 **		 48 '0'		 49 '1'		 50 '2'		 51 '3'		 52 '4'
