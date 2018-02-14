@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ismult.c                                        :+:      :+:    :+:   */
+/*   ft_numlen_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/02/07 11:19:07 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/07 11:20:43 by lbrangie         ###   ########.fr       */
+/*   Created: 2018/02/14 11:10:16 by lbrangie          #+#    #+#             */
+/*   Updated: 2018/02/14 11:27:40 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_ismult(int n, int table)
+size_t			ft_numlen_base(int n, int base)
 {
-	return (!(n % table));
+	size_t			len;
+
+	len = 1;
+	while (n /= base)
+		len++;
+	return (len);
 }

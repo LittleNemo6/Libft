@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/02/09 16:47:04 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/02/14 14:08:54 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,9 +38,7 @@ FILES_LIBFT		=		ft_abs.c				\
 						ft_isdigit.c			\
 						ft_isgraph.c			\
 						ft_islower.c			\
-						ft_ismult.c				\
 						ft_isneg.c				\
-						ft_isodd.c				\
 						ft_isprime.c			\
 						ft_isprint.c			\
 						ft_ispunct.c			\
@@ -48,6 +46,7 @@ FILES_LIBFT		=		ft_abs.c				\
 						ft_isupper.c			\
 						ft_isxdigit.c			\
 						ft_itoa.c				\
+						ft_itoa_base.c			\
 						ft_lstadd.c				\
 						ft_lstdel.c				\
 						ft_lstdelone.c			\
@@ -64,6 +63,7 @@ FILES_LIBFT		=		ft_abs.c				\
 						ft_memset.c				\
 						ft_nextprime.c			\
 						ft_numlen.c				\
+						ft_numlen_base.c		\
 						ft_pgcd.c				\
 						ft_power.c				\
 						ft_ppcm.c				\

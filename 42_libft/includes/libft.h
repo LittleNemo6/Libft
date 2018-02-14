@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/07 11:42:31 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/14 14:09:07 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,9 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <string.h>
+# include <limits.h>
 
-# define FT_INT_MAX 2147483647
-# define FT_INT_MIN -2147483648
-# define FT_UINT_MAX 4294967295
-# define FT_LONG_MAX 9223372036854775807
-# define FT_LONG_MIN -9223372036854775808
-# define FT_ULONG_MAX 18446744073709551615
+# define STR_BASE		"0123456789ABCDEF"
 
 typedef struct	s_list
 {
@@ -32,6 +28,7 @@ typedef struct	s_list
 }				t_list;
 
 char			*ft_itoa(int n);
+char			*ft_itoa_base(int n, int base);
 char			*ft_str_tolower(char *str);
 char			*ft_str_toupper(char *str);
 char			*ft_strcapitalize(char *str);
@@ -66,9 +63,7 @@ int				ft_iscntrl(int c);
 int				ft_isdigit(int c);
 int				ft_isgraph(int c);
 int				ft_islower(int c);
-int				ft_ismult(int n, int table);
 int				ft_isneg(int n);
-int				ft_isodd(int n);
 int				ft_isprime(int n);
 int				ft_isprint(int c);
 int				ft_ispunct(int c);
@@ -88,6 +83,7 @@ int				ft_putstr(const char *s);
 int				ft_putstr_endl(const char *s);
 int				ft_putstr_endl_fd(const char *s, int fd);
 int				ft_putstr_fd(const char *s, int fd);
+int				ft_sqrt(int nb);
 int				ft_str_isalnum(char *str);
 int				ft_str_isalpha(char *str);
 int				ft_str_isascii(char *str);
@@ -105,11 +101,11 @@ int				ft_strcmp(const char *s1, const char *s2);
 int				ft_strequ(const char*s1, const char*s2);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strnequ(const char *s1, const char *s2, size_t n);
-int				ft_sqrt(int nb);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
 size_t			ft_cntwrd(const char *s, char c);
 size_t			ft_numlen(int n);
+size_t			ft_numlen_base(int n, int base);
 size_t			ft_strclen(const char*s, char c);
 size_t			ft_strcspn(const char *s, const char *charset);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
