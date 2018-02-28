@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/14 14:09:07 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/02/28 11:53:43 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 # include <stdlib.h>
 # include <string.h>
 # include <limits.h>
+# include <fcntl.h>
+# include "get_next_line.h"
 
 # define STR_BASE		"0123456789ABCDEF"
 
@@ -79,6 +81,8 @@ int				ft_putchar(char c);
 int				ft_putchar_endl(char c);
 int				ft_putchar_endl_fd(char c, int fd);
 int				ft_putchar_fd(char c, int fd);
+int				ft_putfile(const char *file_name);
+int				ft_putfile_fd(const char *file_name, int fd);
 int				ft_putstr(const char *s);
 int				ft_putstr_endl(const char *s);
 int				ft_putstr_endl_fd(const char *s, int fd);
