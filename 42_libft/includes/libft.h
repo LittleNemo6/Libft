@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/28 11:53:43 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/03/05 15:28:21 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,10 @@ int				ft_putchar_endl_fd(char c, int fd);
 int				ft_putchar_fd(char c, int fd);
 int				ft_putfile(const char *file_name);
 int				ft_putfile_fd(const char *file_name, int fd);
+int				ft_putnbr(int n);
+int				ft_putnbr_endl(int n);
+int				ft_putnbr_endl_fd(int n, int fd);
+int				ft_putnbr_fd(int n, int fd);
 int				ft_putstr(const char *s);
 int				ft_putstr_endl(const char *s);
 int				ft_putstr_endl_fd(const char *s, int fd);
@@ -124,8 +128,6 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_memdel(void **ap);
-void			ft_putnbr(int n);
-void			ft_putnbr_fd(int n, int fd);
 void			ft_puttab(char **tab);
 void			ft_puttab_fd(char **tab, int fd);
 void			ft_strclr(char *s);

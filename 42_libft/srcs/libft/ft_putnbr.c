@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 13:51:09 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/11/22 15:32:46 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/03/05 15:31:59 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void			ft_putnbr(int n)
+static void		ft_outnbr(int n)
 {
 	unsigned int	i;
 
@@ -26,4 +26,10 @@ void			ft_putnbr(int n)
 	}
 	else
 		ft_putchar(i + 48);
+}
+
+int				ft_putnbr(int n)
+{
+	ft_outnbr(n);
+	return (ft_numlen(n));
 }

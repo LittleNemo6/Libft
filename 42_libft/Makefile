@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/02/28 11:53:54 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/03/05 15:16:36 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,6 +74,8 @@ FILES_LIBFT		=		ft_abs.c				\
 						ft_putfile.c			\
 						ft_putfile_fd.c			\
 						ft_putnbr.c				\
+						ft_putnbr_endl.c		\
+						ft_putnbr_endl_fd.c		\
 						ft_putnbr_fd.c			\
 						ft_putstr.c				\
 						ft_putstr_endl.c		\
