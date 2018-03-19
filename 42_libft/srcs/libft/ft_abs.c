@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 15:57:05 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/01/25 16:16:15 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/03/19 14:50:17 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_abs(int n)
+long long		ft_abs(long long n)
 {
 	if (n < 0)
 		return (-n);

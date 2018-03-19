@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/16 15:59:18 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/16 14:55:05 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/03/19 14:50:40 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_isneg(int n)
+int				ft_isneg(long long n)
 {
 	return (n < 0);
 }

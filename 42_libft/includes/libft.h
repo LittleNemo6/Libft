@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/03/05 15:28:21 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/03/19 14:52:12 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ char			*ft_strstr(const char *haystack, const char *needle);
 char			*ft_strsub(const char *s, unsigned int start, size_t len);
 char			*ft_strtrim(const char *s);
 char			**ft_strsplit(const char *s, char c);
-int				ft_abs(int n);
 int				ft_atoi(const char *str);
 int				ft_factorial(int nb);
 int				ft_fibonacci(int nb);
@@ -65,7 +64,7 @@ int				ft_iscntrl(int c);
 int				ft_isdigit(int c);
 int				ft_isgraph(int c);
 int				ft_islower(int c);
-int				ft_isneg(int n);
+int				ft_isneg(long long n);
 int				ft_isprime(int n);
 int				ft_isprint(int c);
 int				ft_ispunct(int c);
@@ -111,9 +110,10 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strnequ(const char *s1, const char *s2, size_t n);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+long long		ft_abs(long long n);
 size_t			ft_cntwrd(const char *s, char c);
-size_t			ft_numlen(int n);
-size_t			ft_numlen_base(int n, int base);
+size_t			ft_numlen(long long n);
+size_t			ft_numlen_base(long long n, int base);
 size_t			ft_strclen(const char*s, char c);
 size_t			ft_strcspn(const char *s, const char *charset);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
