@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/02/14 11:10:16 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/03/19 14:51:10 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/03/26 18:15:15 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ size_t			ft_numlen_base(long long n, int base)
 {
 	size_t			len;
 
-	len = 1;
-	while (n /= base)
+	len = 0;
+	while (ft_power(base, len) - 1 < n)
 		len++;
 	return (len);
 }
