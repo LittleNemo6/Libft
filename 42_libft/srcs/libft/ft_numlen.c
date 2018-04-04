@@ -6,13 +6,13 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/13 14:50:19 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/03/19 14:50:59 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:56:52 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t			ft_numlen(long long n)
+size_t			ft_numlen(intmax_t n)
 {
 	return (ft_numlen_base(n, 10));
 }

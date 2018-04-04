@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/03/05 15:16:36 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/04/04 13:54:46 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,7 @@ FILES_LIBFT		=		ft_abs.c				\
 						ft_nextprime.c			\
 						ft_numlen.c				\
 						ft_numlen_base.c		\
+						ft_numlen_ubase.c		\
 						ft_pgcd.c				\
 						ft_power.c				\
 						ft_ppcm.c				\

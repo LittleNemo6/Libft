@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/03/19 14:52:12 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/04/04 13:56:33 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,8 +112,9 @@ int				ft_tolower(int c);
 int				ft_toupper(int c);
 long long		ft_abs(long long n);
 size_t			ft_cntwrd(const char *s, char c);
-size_t			ft_numlen(long long n);
-size_t			ft_numlen_base(long long n, int base);
+size_t			ft_numlen(intmax_t n);
+size_t			ft_numlen_base(intmax_t n, int base);
+size_t			ft_numlen_ubase(uintmax_t n, int base);
 size_t			ft_strclen(const char*s, char c);
 size_t			ft_strcspn(const char *s, const char *charset);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
