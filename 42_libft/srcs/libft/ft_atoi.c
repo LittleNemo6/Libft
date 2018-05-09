@@ -6,15 +6,15 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/14 13:43:15 by lbrangie          #+#    #+#             */
-/*   Updated: 2017/12/01 20:10:55 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/05/09 15:50:36 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_atoi(const char *str)
+long			ft_atoi(const char *str)
 {
-	int				nbr;
+	long			nbr;
 	char			neg;
 
 	nbr = 0;

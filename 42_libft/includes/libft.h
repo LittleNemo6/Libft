@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/04/04 13:56:33 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/05/09 15:51:09 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ char			*ft_strstr(const char *haystack, const char *needle);
 char			*ft_strsub(const char *s, unsigned int start, size_t len);
 char			*ft_strtrim(const char *s);
 char			**ft_strsplit(const char *s, char c);
-int				ft_atoi(const char *str);
 int				ft_factorial(int nb);
 int				ft_fibonacci(int nb);
 int				ft_isalnum(int c);
@@ -110,6 +109,7 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strnequ(const char *s1, const char *s2, size_t n);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+long			ft_atoi(const char *str);
 long long		ft_abs(long long n);
 size_t			ft_cntwrd(const char *s, char c);
 size_t			ft_numlen(intmax_t n);
