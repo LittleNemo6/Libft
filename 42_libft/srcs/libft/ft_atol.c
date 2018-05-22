@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/14 13:43:15 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/05/22 14:05:54 by lbrangie         ###   ########.fr       */
+/*   Created: 2018/05/22 14:05:03 by lbrangie          #+#    #+#             */
+/*   Updated: 2018/05/22 14:05:57 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_atoi(const char *str)
+long			ft_atol(const char *str)
 {
-	int				nbr;
+	long			nbr;
 	char			neg;
 
 	nbr = 0;

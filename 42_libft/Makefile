@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/04/04 13:54:46 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/05/22 14:06:23 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRCS_DIR_GNL	=		gnl/
 # ================================= FILES ================================= #
 FILES_LIBFT		=		ft_abs.c				\
 						ft_atoi.c				\
+						ft_atol.c				\
 						ft_bzero.c				\
 						ft_cntwrd.c				\
 						ft_factorial.c			\

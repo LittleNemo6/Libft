@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 14:08:10 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/05/04 14:09:36 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/05/21 10:16:19 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@ typedef struct	s_tab
 	int				size;
 	int				index;
 }				t_tab;
+
+static void		ft_free_tabs(t_tab *tab_one, t_tab *tab_two)
+{
+	free(tab_one);
+	free(tab_two);
+}
 
 static void		ft_merge(int *tab, int start, int half, int end)
 {
@@ -43,6 +49,7 @@ static void		ft_merge(int *tab, int start, int half, int end)
 		tab[start++] = tab_one.tab[tab_one.index++];
 	while (tab_two.index < tab_two.size)
 		tab[start++] = tab_two.tab[tab_two.index++];
+	ft_free_tabs(tab_one, tab_two);
 }
 
 void			ft_merge_sort(int *tab, int start, int end)
