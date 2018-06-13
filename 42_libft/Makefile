@@ -6,7 +6,7 @@
 #    By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/10 15:58:04 by lbrangie          #+#    #+#              #
-#    Updated: 2018/05/22 14:06:23 by lbrangie         ###   ########.fr        #
+#    Updated: 2018/06/13 13:03:58 by lbrangie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,6 +61,7 @@ FILES_LIBFT		=		ft_abs.c				\
 						ft_memcpy.c				\
 						ft_memdel.c				\
 						ft_memmove.c			\
+						ft_memprnt.c			\
 						ft_memset.c				\
 						ft_nextprime.c			\
 						ft_numlen.c				\

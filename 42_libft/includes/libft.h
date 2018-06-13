@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/08 17:52:24 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/05/22 14:07:29 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/06/13 12:47:06 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
 # include <fcntl.h>
 # include "get_next_line.h"
 
-# define STR_BASE		"0123456789ABCDEF"
+# define STR_BASE_UP		"0123456789ABCDEF"
+# define STR_BASE_LO		"0123456789abcdef"
 
 typedef struct	s_list
 {
@@ -130,6 +131,7 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void			ft_memdel(void **ap);
+void			ft_memprnt(void *addr, unsigned int size);
 void			ft_puttab(char **tab);
 void			ft_puttab_fd(char **tab, int fd);
 void			ft_strclr(char *s);

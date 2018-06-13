@@ -6,7 +6,7 @@
 /*   By: lbrangie <lbrangie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/20 16:01:17 by lbrangie          #+#    #+#             */
-/*   Updated: 2018/02/07 11:32:15 by lbrangie         ###   ########.fr       */
+/*   Updated: 2018/06/13 13:03:37 by lbrangie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_list			*ft_lstnew(const void *content, size_t content_size)
 	{
 		if (!(fresh->content = ft_memalloc(content_size)))
 			return (NULL);
-		ft_memcpy(fresh->content, (void *)content, content_size);
+		ft_memcpy(fresh->content, content, content_size);
 		fresh->content_size = content_size;
 	}
 	fresh->next = NULL;
